@@ -43,7 +43,7 @@ static int ox, oy, othrottle, orudder, ob1, ob2, ob3, ob4;
 static int adjust (int value) {
   value = 2 * 69000 / value - 2 * 100;
   if (value > 255) value = 255;
-  if (value < 0) value = -128;
+  if (value < 0) value = 0;
   return value;
 }
 
